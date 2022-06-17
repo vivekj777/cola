@@ -1,0 +1,270 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&family=Tangerine:wght@700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+section{
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    padding: 100px;
+    justify-content: center;
+    align-items: center;
+    background: #161616;
+}
+section .circle{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #e51e2a;
+    clip-path: circle(70% at right -20%);
+
+
+}
+header{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 40px 100px;
+  display: flex;
+  justify-content:space-between ;
+  align-items: center;
+
+}
+header .logo{
+    max-width: 150px;
+    position: relative;
+}
+header .navigation{
+    position: relative;
+    display: flex;
+}
+header .navigation li{
+    
+    list-style: none;
+
+
+
+}
+header .navigation a{
+    display: inline-block;
+    text-decoration: none;
+    font-weight: 500;
+    color: #fff;
+    margin-left: 40px;
+
+}
+.content{
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+
+
+}
+.content .textbox{
+    position: relative;
+    max-width: 600px;
+    margin-right: 20px;
+
+
+}
+.content .textbox h2{
+    color: #fff;
+    font-size:3em;
+    margin-bottom: 10px;
+    line-height: 1.4em;
+    font-weight: 700;
+
+
+}
+.content .textbox p{
+    color: #fff;
+
+}
+.content .textbox a{
+    display: inline-block;
+    margin-top: 20px;
+    padding: 8px 20px;
+    background: #e51e2a;
+    color: #fff;
+    border-radius: 40px;
+    text-decoration: none;
+    letter-spacing: 1.5px;
+}
+.sci{
+    position: absolute;
+    bottom:40px;
+    left: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+
+}
+
+.sci li{
+    list-style: none;
+   
+
+}
+.sci li a{
+    display: inline-block;
+    margin-left: 15px;
+    background: #222;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    transition: 0.2s ease-in-out;
+
+
+}
+.sci li a:hover{
+    background: #e51e2a;
+    transform: translateY(-10px);
+
+}
+.sci li a img{
+    filter: invert(1);
+    transform:scale(0.5);
+}
+.imgbox{
+    height: 600px;
+    width: 25rem;
+    overflow: hidden;
+    text-align: center;
+    justify-content: center;
+   display: flex;
+    transform: translateX(-40%);
+   
+    
+ 
+}
+.imgbox .images{
+    height: 100%;
+    width: 100%;
+
+}
+.images img{
+    height: 600px;
+    width: 15rem;
+
+}
+.imgbox .btn{
+  
+    justify-content: space-between;
+    display:list-item;
+    position: absolute;
+    bottom: 50px;
+    left:0px;
+   
+    
+
+}
+.btn span{
+    border: 2px solid #e51e2a;
+   display:flex;
+   width: 15px;
+   height: 15px;
+    cursor: pointer;
+    border-radius: 50%;
+    justify-content: space-between;
+    margin-top: 20px;
+    transition: 0.2s ease-in;
+}
+.btn span:hover{
+    background: #e51e2a;
+   
+
+}
+.btn span:active{
+    background: #e51e2a;
+}
+@media(max-width:991px)
+{
+    header{
+        padding: 40px;
+    }
+    section
+    {
+     
+        padding: 150px 40px;
+       
+    }
+   
+    .sci{
+        left: 40px;
+    }
+ .content{
+    flex-direction: column;
+    
+
+ }
+ .content .textbox,.content .imgbox{
+    max-width: 100%;
+ }
+ .content .imgbox{
+    height: 400px;
+
+ }
+ .content .imgbox img{
+    height: 400px;
+ }
+ header .navigation{
+    display: none;
+ }
+
+header .navigation.active{
+    display: flex;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #e51e2a;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+    
+
+}
+header .navigation li a{
+    margin: 10px;
+    font-size: 1.5em;
+    font-weight: 300;
+
+}
+.toggle{
+    position: relative;
+    width: 30px;
+    height: 30px;
+    background: url(images/menu.png);
+    background-position: center;
+    cursor:pointer;
+    background-repeat:no-repeat  ;
+    z-index: 10000;
+}
+.toggle.active{
+    background: url(images/close.png);
+    background-position: center;
+    cursor:pointer;
+    width: 30px;
+    height: 30px;
+
+    
+   
+   
+}
+}

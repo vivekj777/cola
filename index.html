@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cococola</title>
+    <link rel="stylesheet" href="style.css">
+    <link
+  rel="stylesheet"
+  href="https://unpkg.com/swiper@8/swiper-bundle.min.css"
+/>
+</head>
+<body>
+    <section>
+        <div class="circle">
+        </div>
+        <header>
+            <a href="#"><img src="images/logo.png" class="logo"></a>
+            <div class="toggle" onclick="toggle()"></div>
+            <ul class="navigation">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Menu</a></li>
+                <li><a href="#">What's New</a></li>
+                <li><a href="#">Contact</a></li>
+
+            </ul>
+        </header>
+        <div class="content">
+            <div class="textbox">
+                <h2>Taste the Feeling </h2>
+                <p>Throughout the years, the slogans used in advertising for Coca-Cola have reflected not only the brand, but the times. Slogans provide a simple, direct way to communicate about Coca-Cola
+                    The 1906 slogan, "The Great National Temperance Beverage," reflects a time when the society in the United States was veering away from alcoholic beverages, and Coca-Cola provided a nice alternative.
+                    
+                  </p>
+                <a href="#">Learn More</a>
+             </div>
+           <div class="imgbox">
+            <div class="images">
+                     <img src="images/cocacola1.png" id="zero">
+                     <img src="images/cocacola2.png" id="one">
+                     <img src="images/cocacola3.png" id="two">
+                     <img src="images/cocacola4.png" id="three">
+                    <img src="images/cocacola5.png"  id="four">
+                     <img src="images/cocacola6.png" id="five">
+
+            </div>
+            <div class="btn">
+                <span onclick="change()" class="active"></span>
+                <span onclick="change1()"></span>
+                <span onclick="change2()"></span>
+                <span onclick="change3()"></span>
+                <span onclick="change4()"></span>
+                <span onclick="change5()"></span>
+
+            </div>
+           </div>
+        </div>
+        <ul class="sci">
+            <li><a href="#"><img src="images/facebook.png"></a></li>
+            <li><a href="#"><img src="images/twitter.png"></a></li>
+            <li><a href="#"><img src="images/instagram.png"></a></li>
+        </ul>
+    </section>
+    <script>
+       var x=document.getElementById("zero");
+       var y=document.getElementById("img1")
+   function change(){
+   console.log("hello");
+  
+ 
+  x.setAttribute("src","images/cocacola1.png");
+}
+function change1(){
+ 
+  x.setAttribute("src","images/cocacola2.png");
+}
+function change2(){
+  x.setAttribute("src","images/cocacola3.png");
+}
+function change3(){
+  x.setAttribute("src","images/cocacola4.png");
+}
+function change4(){
+  x.setAttribute("src","images/cocacola5.png");
+}
+function change5(){
+  x.setAttribute("src","images/cocacola6.png");
+}
+function toggle(){
+  const navigation=document.querySelector('.navigation')
+  const menu=document.querySelector('.toggle');
+  menu.classList.toggle('active')
+  navigation.classList.toggle('active')
+
+}
+    </script>
+</body>
+</html>
