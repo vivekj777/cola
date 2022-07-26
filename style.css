@@ -267,7 +267,7 @@ header .navigation li a{
    
    
 }
-    .imgbox{
-        margin-left:150px;
-    }
+.imgbox {
+    transform: translate(10px, 10px);
+}
 }
